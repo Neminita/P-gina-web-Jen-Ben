@@ -1,8 +1,77 @@
 body{
     background-color: #422e58;
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.encabezado1{
+    display: flex;
+    justify-content: center;
+    color: rgb(146, 35, 197);
 }
 
-p{
+.TEXTO-IMAGENES{
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(29, 13, 13);
+    font-size: 300px;
+        
+}
+.BOTON-CATALOGO{
+    background-color: rgba(146, 35, 197, 0.384);
+    font-size: 30px;
+    border-style: hidden;
+    margin-bottom: 6px;
     
+}
+p{
+    margin: 20px;
     font-size: 18px;
+}
+header{
+    display: flex;
+    min-height: 80px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+height: 70px;
+margin-right: 10px;
+}
+
+.carro {
+    display: flex;
+   
+    
+    
+    
+}
+
+.carro img{
+margin-right: 20px;
+height: 40px;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
 }
