@@ -1,9 +1,13 @@
 *{
     box-sizing: border-box;
+    
 }
 
 header{
     background-color:rgb(245, 245, 245);
+    min-width: 420px;
+    max-width: 3000px;
+    
 
 }
 
@@ -11,6 +15,8 @@ body{
     background-color: #422e58;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    min-width: 420px;
+    max-width: 3000px;
 }
 
 a{
@@ -25,6 +31,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    
 
 }
 
@@ -55,8 +62,7 @@ button:hover{
 .TEXTO-IMAGENES{
     color: transparent;
     -webkit-text-stroke: 3px rgb(249, 249, 249);
-    font-size: 300px;
-        
+    font-size: 20vw;    
 }
 
 .BOTON-CATALOGO{
@@ -124,10 +130,11 @@ nav a{
     nav{
         padding: 10px;
     }
+    
 }
 
 .container{
-   max-width: 1400px;
+   max-width: 3000px;
    margin: auto; 
    align-items: center;
 }
@@ -145,10 +152,14 @@ nav a{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
+    
 }
 
 #nuevos-añadidos .container{
     padding: 150px 12px;
+    grid-row: auto;
+    
+    
 }
 
 #nuevos-añadidos p{
@@ -166,4 +177,20 @@ nav a{
     margin: 30px;
     border-radius: 15px;
 }
+
+form{
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
+}
+.texto-contacto{
+    display: flex;
+    justify-content: center;
+    color: rgb(110, 26, 149);
+    margin: 0;
+}
+
+    
+
+
 
