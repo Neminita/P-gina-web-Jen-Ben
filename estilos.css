@@ -12,7 +12,7 @@ header{
 }
 
 body{
-    background-color: #422e58;
+    background-color: rgb(30,30,30);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-width: 420px;
@@ -118,6 +118,10 @@ height: 40px;
     font-weight: 400;
 }
 
+.Carro{
+    background-color: rgb(30,30,30);
+}
+
 nav a{
     font-weight: 600;
     padding-right: 10px;
@@ -130,13 +134,52 @@ nav a{
     nav{
         padding: 10px;
     }
+
+    #Nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+    
     
 }
 
+img{
+    font-size: 300px;
+    align-items: center;
+    align-content: center;
+}
+
+#Nosotros{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Contacto{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
 .container{
    max-width: 3000px;
-   margin: auto; 
+   margin: 0; 
    align-items: center;
+}
+
+.card{
+    align-items: center;
+    width: 300px;
+    line-height: 100%;
 }
 
 #hero{
@@ -152,6 +195,7 @@ nav a{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
+    align-items: center;
     
 }
 
@@ -189,6 +233,7 @@ form{
     color: rgb(110, 26, 149);
     margin: 0;
 }
+
 
     
 
