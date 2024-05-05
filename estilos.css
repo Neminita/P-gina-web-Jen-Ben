@@ -12,7 +12,7 @@ header{
 }
 
 body{
-    background-color: #422e58;
+    background-color: rgb(30,30,30);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-width: 420px;
@@ -118,6 +118,10 @@ height: 40px;
     font-weight: 400;
 }
 
+.Carro{
+    background-color: rgb(30,30,30);
+}
+
 nav a{
     font-weight: 600;
     padding-right: 10px;
@@ -130,13 +134,55 @@ nav a{
     nav{
         padding: 10px;
     }
+
+    #Nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+    
     
 }
 
+img{
+    font-size: 300px;
+    align-items: center;
+    align-content: center;
+}
+
+#Nosotros{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Contacto{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
 .container{
    max-width: 3000px;
-   margin: auto; 
+   margin: 0; 
    align-items: center;
+}
+
+.card{
+    align-items: center;
+    height: auto;
+    margin: auto;    
+   
+    
+    
 }
 
 #hero{
@@ -148,26 +194,39 @@ nav a{
     height: 90vh;
 }
 
-#nuevos-añadidos{
+#cartas .container{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
     
 }
 
 #nuevos-añadidos .container{
     padding: 150px 12px;
     grid-row: auto;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
     
     
 }
 
 #nuevos-añadidos p{
     display: none;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
 }
 
 #nuevos-añadidos h2{
     margin-top: 0;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
 }
 
 #nuevos-añadidos .card{
@@ -176,6 +235,9 @@ nav a{
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
 }
 
 form{
@@ -190,7 +252,31 @@ form{
     margin: 0;
 }
 
+#cartas{
+    max-width: 600px;
+    min-width: none;
+     margin: auto;
+    max-height: auto;
+
+}
     
+#cartas .card-title{
+    max-width: 250px;
+    align-items: center;
+    
+    
+}
 
+#cartas img {
+    max-width: 600px;
+    min-width: auto;
+    align-items: auto;
+}
 
+#cartas .card {
+    align-items: flex-start;
+    margin: 20px;
 
+    
+    
+}
