@@ -176,15 +176,6 @@ img{
    align-items: center;
 }
 
-.card{
-    align-items: center;
-    height: auto;
-    margin: auto;    
-   
-    
-    
-}
-
 #hero{
     display: flex;
     align-items: center;
@@ -198,10 +189,6 @@ img{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
-    align-items: center;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
     
 }
 
@@ -251,6 +238,7 @@ form{
     color: rgb(110, 26, 149);
     margin: 0;
 }
+
 
 #cartas{
     max-width: 600px;
