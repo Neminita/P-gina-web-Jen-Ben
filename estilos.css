@@ -62,7 +62,8 @@ button:hover{
 .TEXTO-IMAGENES{
     color: transparent;
     -webkit-text-stroke: 3px rgb(249, 249, 249);
-    font-size: 20vw;    
+    font-size: 20vw;  
+    min-width: 20px;  
 }
 
 .BOTON-CATALOGO{
@@ -276,7 +277,20 @@ form{
 #cartas .card {
     align-items: flex-start;
     margin: 20px;
+}
 
-    
-    
+#formulario{
+    background-color: white;
+        
+    max-width: 1200px;
+    min-width: none;
+    margin: 20px;   
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #c00909;
+    padding-top: 20px;
 }
