@@ -13,6 +13,7 @@ header{
 
 body{
     background-color: rgb(30,30,30);
+    background-color: rgb(30,30,30);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-width: 420px;
@@ -123,6 +124,10 @@ height: 40px;
     background-color: rgb(30,30,30);
 }
 
+.Carro{
+    background-color: rgb(30,30,30);
+}
+
 nav a{
     font-weight: 600;
     padding-right: 10px;
@@ -171,8 +176,45 @@ img{
     text-align: center;
     padding: 200px 12px;
 }
+
+    #Nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+    }
+    
+    
+}
+
+img{
+    font-size: 300px;
+    align-items: center;
+    align-content: center;
+}
+
+#Nosotros{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Contacto{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
 .container{
    max-width: 3000px;
+   margin: 0; 
    margin: 0; 
    align-items: center;
 }
@@ -196,6 +238,7 @@ img{
 }
 
 #cartas .container{
+#cartas .container{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
@@ -212,6 +255,9 @@ img{
     max-width: 1200px;
     min-width: none;
     margin: auto;    
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
     
     
 }
@@ -221,10 +267,16 @@ img{
     max-width: 1200px;
     min-width: none;
     margin: auto;    
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
 }
 
 #nuevos-añadidos h2{
     margin-top: 0;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
     max-width: 1200px;
     min-width: none;
     margin: auto;    
@@ -236,6 +288,9 @@ img{
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;    
     max-width: 1200px;
     min-width: none;
     margin: auto;    
