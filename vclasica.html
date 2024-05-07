@@ -33,10 +33,24 @@
                 <li class="nav-item">
                   <a class="nav-link" href="vRegistro.html">Registro</a>
                 </li>
-                <li class="nav-item">
+                <li class="submenu">
                   <div class="carro">
-                    <a href="vCarrito.html" class="nav-link">Carrito </a>
                     <img src="Imagenes/CARRITO.png" alt="carrito">
+                      <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                          <thead>
+                              <tr>
+                                  <th>Imagen</th>
+                                  <th>Nombre</th>
+                                  <th>Precio</th>
+                                  <th>Cantidad</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                        <tbody></tbody>
+                      </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                   </div>
                   </div>
                 </li>
               </ul>
@@ -46,17 +60,19 @@
       </header>
         
         <br>
+      <div id="lista-cursos" class="container"> 
       <section id="cartas">  
+       
         <div class="card">
             <div class="col">
               <div class="card">
                 <img src="Imagenes/thefourthseasons.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="info-card">
                   <h5 class="card-title">Vivaldi - The Fourth Seasons</h5>
-                  <p class="card-text">$40.000</p>
+                  <p class="card-text">$40.000 <span class="u-pull-right ">$15</span></p>
                   <button type="button" class="BOTON-CARD">
-                    Añadir Al Carro
-                  </button>                
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                  </button>             
                 </div>
               </div>
             </div>
@@ -65,11 +81,10 @@
                 <img src="Imagenes/classic2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Tiana Lemnitz - The Art Of Tiana Lemnitz Box</h5>
-                  <p class="card-text"> $14.000</p>
+                  <p class="precio"> $14.000 <span class="u-pull-right ">$15</span></p>
                   <button type="button" class="BOTON-CARD">
-                    Añadir Al Carro
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
                   </button>
-                  
                   <div class="container-modal">
                     
                   </div>
@@ -81,9 +96,9 @@
                 <img src="Imagenes/classic3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Vivaldi, Veracini, Haendel, Bach, Severino Gazzelloni, Bruno Canino - La Flauta En El Barroco Italiano Y Alemán</h5>
-                  <p class="card-text">$20.000</p>
+                  <p class="precio">$20.000 <span class="u-pull-right ">$15</span></p>
                   <button type="button" class="BOTON-CARD">
-                    Añadir Al Carro
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
                   </button>
                 </div>
               </div>
@@ -93,9 +108,9 @@
                 <img src="Imagenes/classic4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Mozart, Orchestre De Chambre Ramat-Gan* Direction Eliahu Inbal - Trois Divertimenti Pour Orchestre A Cordes .</h5>
-                  <p class="card-text">$30.000</p>
+                  <p class="precio">$30.000 <span class="u-pull-right ">$15</span></p>
                   <button type="button" class="BOTON-CARD">
-                    Añadir Al Carro
+                    <a class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
                   </button>
                 </div>
               </div>
@@ -103,5 +118,7 @@
           </div>
       </section>    
         <script src="bootstrap/js/bootstrap.min.js"></script>
+    </div>   
+    <script src="JavaScript/javascript.js"></script> 
     </body>
     </html>
