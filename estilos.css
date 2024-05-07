@@ -47,6 +47,8 @@ p{
     font-size: 1.25em;
 }
 
+
+
 li{
     font-size: 1.25em;
 }
@@ -247,52 +249,7 @@ img{
     
 }
 
-#nuevos-añadidos .container{
-    padding: 150px 12px;
-    grid-row: auto;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    
-    
-}
 
-#nuevos-añadidos p{
-    display: none;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-}
-
-#nuevos-añadidos h2{
-    margin-top: 0;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-}
-
-#nuevos-añadidos .card{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-}
 
 form{
     max-width: 1200px;
@@ -415,4 +372,16 @@ form{
         margin-bottom: 30px;
     }
 }
+
+#carouselExampleAutoplaying {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-group{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
 

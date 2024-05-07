@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <!-- NAVBAR -->
+      <header>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
           <div class="container-fluid">
             <div class="logo">
               <img src="Imagenes/logo.png" alt="Logo de la compañia">
@@ -31,6 +32,9 @@
                   <a class="nav-link" href="vContacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="vRegistro.html">Registro</a>
+                </li>
+                <li class="nav-item">
                   <div class="carro">
                     <a href="vCarrito.html" class="nav-link">Carrito </a>
                     <img src="Imagenes/CARRITO.png" alt="carrito">
@@ -49,7 +53,7 @@
         <div class="card">
           <div class="col">
             <div class="card">
-              <img src="Imagenes/The planitum.jpg" class="card-img-top" alt="...">
+              <img src="Imagenes/the platinum.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Louis Armstrong - The Planitum Collection</h5>
                 <p class="card-text">$20.000 <del class="del-price">$38.000</del></p>
@@ -70,15 +74,14 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        <button type="button" class="BOTON-CARD" data-id="7">AÑADIR</button>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>        
               </div>
             </div>
           </div>
-        
           <div class="col">
             <div class="card">
               <img src="Imagenes/Louis.jpg" class="card-img-top" alt="...">
@@ -102,7 +105,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        <button type="button" class="BOTON-CARD" data-id="8">AÑADIR</button>
                       </div>
                     </div>
                   </div>
@@ -133,7 +136,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">AÑADIR</button>
+                        <button type="button" class="BOTON-CARD" data-id="9">AÑADIR</button>
                       </div>
                     </div>
                   </div>
@@ -167,7 +170,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">AÑADIR</button>
+                        <button type="button" class="BOTON-CARD" data-id="10">AÑADIR</button>
                       </div>
                     </div>
                   </div>
@@ -198,7 +201,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        <button type="button" class="BOTON-CARD" data-id="11">AÑADIR</button>
                       </div>
                     </div>
                   </div>
@@ -208,7 +211,11 @@
           </div>
         </div>
       </div>  
-    </section>    
+    </section>
+
+    
+     
+     
       <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
