@@ -14,7 +14,6 @@ header{
 
 body{
     background-color: rgb(30,30,30);
-    background-color: rgb(30,30,30);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-width: 420px;
@@ -68,24 +67,6 @@ button:hover{
     margin: 0;
 }
 
-.TEXTO-IMAGENES{
-    color: transparent;
-    -webkit-text-stroke: 3px rgb(249, 249, 249);
-    font-size: 20vw;  
-    min-width: 20px;  
-}
-
-.BOTON-CATALOGO{
-    color: white;
-    background-color: rgba(146, 35, 197, 0.384);
-    border: 2px solid rgb(146, 35, 197, 0.384);
-    font-size: 30px;
-    border-style: hidden;
-    margin-bottom: 6px;
-    border-radius: 10px;
-    font-weight: bold;
-    
-}
 
 .BOTON-CARD{
     color: white;
@@ -128,13 +109,6 @@ height: 40px;
     font-weight: 400;
 }
 
-.Carro{
-    background-color: rgb(30,30,30);
-}
-
-.Carro{
-    background-color: rgb(30,30,30);
-}
 
 nav a{
     font-weight: 600;
@@ -251,53 +225,6 @@ img{
     min-width: none;
     margin: auto;    
     
-}
-
-#nuevos-añadidos .container{
-    padding: 150px 12px;
-    grid-row: auto;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    
-    
-}
-
-#nuevos-añadidos p{
-    display: none;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-}
-
-#nuevos-añadidos h2{
-    margin-top: 0;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-}
-
-#nuevos-añadidos .card{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
-    max-width: 1200px;
-    min-width: none;
-    margin: auto;    
 }
 
 form{
