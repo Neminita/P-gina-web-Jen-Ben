@@ -33,7 +33,7 @@
               <a class="nav-link" href="vContacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="registro.html">Registro</a>
+              <a class="nav-link" href="vInicioSesion.html">Inicio Sesión/Registro</a>
             </li>
             <li class="nav-item">
               <div class="carro">
@@ -47,77 +47,62 @@
     </nav>
   </header>
 
-<section id="formulario">
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
+  <section id="inicio-sesion">
 
-        <div class="col-md-6">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" required>
-        </div>
-
-        <div class="col-12">
-          <label for="direccion" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Ejemplo: 123 Nombre-calle" required>
-        </div>
-
-        <div class="col-12">
-          <label for="direccion" class="form-label">Dirección 2</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Departamento, oficina, piso" required>
-        </div>
-
-        <div class="col-md-6">
-          <label for="ciudad" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="ciudad" placeholder="Ejemplo: Valparaiso" required>
-        </div>
-
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Región</label>
-          <select id="inputState" class="form-select">
-            <option selected>Elija una región</option>
-            <option>Región de Arica y Parinacota</option>
-            <option>Región de Tarapacá</option>
-            <option>Región de Antofagasta</option>
-            <option>Región de Atacama</option>
-            <option>Región de Coquimbo</option>
-            <option>Región de Valparaíso</option>
-            <option>Región Metropolitana</option>
-            <option>Región de O’Higgins</option>
-            <option>Región del Maule</option>
-            <option>Región del Ñuble</option>
-            <option>Región del Biobío</option>
-            <option>Región de La Araucanía</option>
-            <option>Región de Los Ríos</option>
-            <option>Región de Los Lagos</option>
-            <option>Región de Aysén</option>
-            <option>Región de Magallanes</option>
-            <option>...</option>
-          </select>
-        </div>
-
-        <div class="col-md-2">
-          <label for="cpostal" class="form-label">Código Postal</label>
-          <input type="text" class="form-control" id="cpostal" required>
-        </div>
-
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" required>
-            <label class="form-check-label" for="gridCheck">
-              Acepto términos y condiciones.
-            </label>
+    <div class="wrapper">
+        <form action="">
+            <h1>Registro</h1>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Región</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elija una región</option>
+                <option>Región de Arica y Parinacota</option>
+                <option>Región de Tarapacá</option>
+                <option>Región de Antofagasta</option>
+                <option>Región de Atacama</option>
+                <option>Región de Coquimbo</option>
+                <option>Región de Valparaíso</option>
+                <option>Región Metropolitana</option>
+                <option>Región de O’Higgins</option>
+                <option>Región del Maule</option>
+                <option>Región del Ñuble</option>
+                <option>Región del Biobío</option>
+                <option>Región de La Araucanía</option>
+                <option>Región de Los Ríos</option>
+                <option>Región de Los Lagos</option>
+                <option>Región de Aysén</option>
+                <option>Región de Magallanes</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Ciudad" required>
+              <i class='bx bxs-user'></i>
           </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Registrarse</button>
-          <p class="warnings" id="warnings"> </p>
-        </div>
-      </form>
-    </section>
-    <br>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Correo" required>
+              <i class='bx bxs-lock' ></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Contraseña" required>
+            <i class='bx bxs-lock' ></i>
+          </div>
+            <div class="remember-forgot">
+                <label ><input type="checkbox">Acepto términos y condiciones.</label>
+            </div>
+
+            <button type="submit" class="btn">Registrarse</button>
+
+            <div class="register-link">
+                <p>Ya Posee Cuenta? <a href="vInicioSesion.html">Ingresar</a></p>
+            </div>
+        </form>
+    </div>
+</section>    
 
   <footer class="footer">
     <div class="container">
