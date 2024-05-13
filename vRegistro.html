@@ -37,8 +37,7 @@
             </li>
             <li class="nav-item">
               <div class="carro">
-                <a href="vCarrito.html" class="nav-link">Carrito </a>
-                <img src="Imagenes/CARRITO.png" alt="carrito">
+                <a href="vCarrito.html" class="nav-link"><img src="Imagenes/CARRITO.png" alt="carrito"><span id="cuenta-carrito">0</span> </a>
               </div>
             </li>
           </ul>
@@ -50,7 +49,7 @@
   <section id="inicio-sesion">
 
     <div class="wrapper">
-        <form action="">
+        <form action="" method="POST" id="form">
             <h1>Registro</h1>
             <div class="col-md-4">
               <label for="inputState" class="form-label">Región</label>
@@ -76,19 +75,19 @@
               </select>
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Ciudad" required>
+              <input type="text" name="" id="ciudad" placeholder="Ciudad" >
               <i class='bx bxs-user'></i>
           </div>
             <div class="input-box">
-                <input type="text" placeholder="Nombre Usuario" required>
+                <input type="text" name="" id="name" placeholder="Nombre Usuario" >
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-              <input type="email" placeholder="Correo" required>
+              <input type="email" name="" id="email" placeholder="Correo" >
               <i class='bx bxs-lock' ></i>
           </div>
           <div class="input-box">
-            <input type="password" placeholder="Contraseña" required>
+            <input type="password" name="" id="password" placeholder="Contraseña" >
             <i class='bx bxs-lock' ></i>
           </div>
             <div class="remember-forgot">
@@ -96,7 +95,7 @@
             </div>
 
             <button type="submit" class="btn">Registrarse</button>
-
+            <p class="warnings" id="warnings"></p>
             <div class="register-link">
                 <p>Ya Posee Cuenta? <a href="vInicioSesion.html">Ingresar</a></p>
             </div>
@@ -156,5 +155,6 @@
   
   <script src="Jquery/jquery-3.7.1.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="JavaScript/javascript.js"></script>
 </body>
 </html>

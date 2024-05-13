@@ -38,8 +38,7 @@
                 </li>
                 <li class="nav-item">
                     <div class="carro">
-                    <a href="vCarrito.html" class="nav-link">Carrito </a>
-                    <img src="Imagenes/CARRITO.png" alt="carrito">
+                      <a href="vCarrito.html" class="nav-link"><img src="Imagenes/CARRITO.png" alt="carrito"><span id="cuenta-carrito">0</span> </a>
                     </div>
                 </li>
                 </ul>
@@ -53,11 +52,11 @@
             <form action="">
                 <h1>Iniciar Sesión</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre Usuario" required>
+                    <input type="text" name="" id="name" placeholder="Nombre Usuario" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" name="" id="password" placeholder="Contraseña" required>
                     <i class='bx bxs-lock' ></i>
                 </div>
 
@@ -67,6 +66,7 @@
                 </div>
 
                 <button type="submit" class="btn">Ingresar</button>
+                <p class="warnings" id="warnings"></p>
 
                 <div class="register-link">
                     <p>No tiene Cuenta? <a href="vRegistro.html">Registrarse</a></p>
@@ -128,6 +128,7 @@
     
     </footer>
 
-    
+  <script src="JavaScript/javascript.js"></script> 
+  <script src="JavaScript/javascript.js"></script>
 </body>
 </html>
