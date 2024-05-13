@@ -6,17 +6,23 @@
     <title>Registro</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <body>
 </head>
 
+<<<<<<< HEAD
   <!-- NAVBAR -->
   <header>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+=======
+<header>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+>>>>>>> main
       <div class="container-fluid">
         <div class="logo">
           <img src="Imagenes/logo.png" alt="Logo de la compañia">
         </div>
-        <a class="navbar-brand" href="#">Discos Jeben's</a>
+        <a class="navbar-brand" href="inicio.html">Discos Jeben's</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,12 +39,15 @@
               <a class="nav-link" href="vContacto.html">Contacto</a>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
               <a class="nav-link" href="vRegistro.html">Registro</a>
+=======
+              <a class="nav-link" href="vInicioSesion.html">Inicio Sesión/Registro</a>
+>>>>>>> main
             </li>
             <li class="nav-item">
               <div class="carro">
-                <a href="vCarrito.html" class="nav-link">Carrito </a>
-                <img src="Imagenes/CARRITO.png" alt="carrito">
+                <a href="vCarrito.html" class="nav-link"><img src="Imagenes/CARRITO.png" alt="carrito"><span id="cuenta-carrito">0</span> </a>
               </div>
             </li>
           </ul>
@@ -47,77 +56,115 @@
     </nav>
   </header>
 
-<section id="formulario">
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
+  <section id="inicio-sesion">
 
-        <div class="col-md-6">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" required>
-        </div>
-
-        <div class="col-12">
-          <label for="direccion" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Ejemplo: 123 Nombre-calle" required>
-        </div>
-
-        <div class="col-12">
-          <label for="direccion" class="form-label">Dirección 2</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Departamento, oficina, piso" required>
-        </div>
-
-        <div class="col-md-6">
-          <label for="ciudad" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="ciudad" placeholder="Ejemplo: Valparaiso" required>
-        </div>
-
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Región</label>
-          <select id="inputState" class="form-select">
-            <option selected>Elija una región</option>
-            <option>Región de Arica y Parinacota</option>
-            <option>Región de Tarapacá</option>
-            <option>Región de Antofagasta</option>
-            <option>Región de Atacama</option>
-            <option>Región de Coquimbo</option>
-            <option>Región de Valparaíso</option>
-            <option>Región Metropolitana</option>
-            <option>Región de O’Higgins</option>
-            <option>Región del Maule</option>
-            <option>Región del Ñuble</option>
-            <option>Región del Biobío</option>
-            <option>Región de La Araucanía</option>
-            <option>Región de Los Ríos</option>
-            <option>Región de Los Lagos</option>
-            <option>Región de Aysén</option>
-            <option>Región de Magallanes</option>
-            <option>...</option>
-          </select>
-        </div>
-
-        <div class="col-md-2">
-          <label for="cpostal" class="form-label">Código Postal</label>
-          <input type="text" class="form-control" id="cpostal" required>
-        </div>
-
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" required>
-            <label class="form-check-label" for="gridCheck">
-              Acepto términos y condiciones.
-            </label>
+    <div class="wrapper">
+        <form action="" method="POST" id="form">
+            <h1>Registro</h1>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Región</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elija una región</option>
+                <option>Región de Arica y Parinacota</option>
+                <option>Región de Tarapacá</option>
+                <option>Región de Antofagasta</option>
+                <option>Región de Atacama</option>
+                <option>Región de Coquimbo</option>
+                <option>Región de Valparaíso</option>
+                <option>Región Metropolitana</option>
+                <option>Región de O’Higgins</option>
+                <option>Región del Maule</option>
+                <option>Región del Ñuble</option>
+                <option>Región del Biobío</option>
+                <option>Región de La Araucanía</option>
+                <option>Región de Los Ríos</option>
+                <option>Región de Los Lagos</option>
+                <option>Región de Aysén</option>
+                <option>Región de Magallanes</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <input type="text" name="" id="ciudad" placeholder="Ciudad" >
+              <i class='bx bxs-user'></i>
           </div>
+            <div class="input-box">
+                <input type="text" name="" id="name" placeholder="Nombre Usuario" >
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+              <input type="email" name="" id="email" placeholder="Correo" >
+              <i class='bx bxs-lock' ></i>
+          </div>
+          <div class="input-box">
+            <input type="password" name="" id="password" placeholder="Contraseña" >
+            <i class='bx bxs-lock' ></i>
+          </div>
+            <div class="remember-forgot">
+                <label ><input type="checkbox">Acepto términos y condiciones.</label>
+            </div>
+
+            <button type="submit" class="btn">Registrarse</button>
+            <p class="warnings" id="warnings"></p>
+            <div class="register-link">
+                <p>Ya Posee Cuenta? <a href="vInicioSesion.html">Ingresar</a></p>
+            </div>
+        </form>
+    </div>
+</section>    
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-row">
+
+        <div class="footer-links">
+
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="vNosotros.html">Nosotros</a></li>
+            <li><a href="">Nuestros Servicios</a></li>
+            <li><a href="">Garantías y seguridad</a></li>
+            <li><a href="">Únete a Discos Jeben's</a></li>
+          </ul>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Registrarse</button>
-          <p class="warnings" id="warnings"> </p>
+        <div class="footer-links">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="">Preguntas Frecuentes</a></li>
+            <li><a href="">Compras</a></li>
+            <li><a href="">Envíos</a></li>
+            <li><a href="">Pagos</a></li>
+          </ul>
         </div>
-      </form>
-    </section>
+        <div class="footer-links">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="">Productos Disponibles</a></li>
+            <li><a href="">Categorías</a></li>
+            <li><a href="">Ofertas</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Siguenos</h4>
+          <div class="social-link">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </footer>
+  
   <script src="Jquery/jquery-3.7.1.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="JavaScript/javascript.js"></script>
 </body>
 </html>
