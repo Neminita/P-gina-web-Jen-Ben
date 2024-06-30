@@ -1,0 +1,209 @@
+<<<<<<< HEAD:vclasica.html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="JavaScript/app.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="logo">
+                <img src="Imagenes/logo.png" alt="Logo de la compañia">
+                </div>
+                <a class="navbar-brand" href="inicio.html">Discos Jeben's</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="vInicioSesion.html">Inicio Sesión/Registro</a>
+                    </li>
+                    <li class="nav-item">
+                    <div class="carro">
+                      <a href="vCarrito.html" class="nav-link"><img src="Imagenes/CARRITO.png" alt="carrito"><span id="cuenta-carrito">0</span> </a>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+=======
+{% extends 'tienda/base.html' %}
+{% block contenido %}
+{%load static%}
+
+>>>>>>> Benjamin:tienda/templates/tienda/vclasica.html
+        
+        <br>
+        
+      <section id="cartas">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+<<<<<<< HEAD:vclasica.html
+                <img src="Imagenes/Productos/thefourthseasons.jpg" class="card-img-top" alt="...">
+=======
+                <img src="{% static 'tienda/Imagenes/Productos/thefourthseasons.jpg'%}" class="card-img-top" alt="...">
+>>>>>>> Benjamin:tienda/templates/tienda/vclasica.html
+                <div class="card-body">
+                  <p class="card-title">Vivaldi - The Fourth Seasons</p>
+                  <p class="card-text">$40.000</p>
+                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Añadir Al Carro
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+<<<<<<< HEAD:vclasica.html
+                <img src="Imagenes/Productos/classic2.png" class="card-img-top" alt="...">
+=======
+                <img src="{% static 'tienda/Imagenes/Productos/classic2.png'%}" class="card-img-top" alt="...">
+>>>>>>> Benjamin:tienda/templates/tienda/vclasica.html
+                <div class="card-body">
+                  <p class="card-title">Tiana Lemnitz - The Art Of Tiana Lemnitz Box</p>
+                  <p class="card-text"> $14.000</p>
+                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Añadir Al Carro
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-modal">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+<<<<<<< HEAD:vclasica.html
+                <img src="Imagenes/Productos/classic3.jpg" class="card-img-top" alt="...">
+=======
+                <img src="{% static 'tienda/Imagenes/Productos/classic3.jpg'%}" class="card-img-top" alt="...">
+>>>>>>> Benjamin:tienda/templates/tienda/vclasica.html
+                <div class="card-body">
+                  <p class="card-title">Vivaldi, Veracini, Haendel, Bach, Severino Gazzelloni, Bruno Canino - La Flauta En El Barroco Italiano Y Alemán</p>
+                  <p class="card-text">$20.000</p>
+                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Añadir Al Carro
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+<<<<<<< HEAD:vclasica.html
+                <img src="Imagenes/Productos/classic4.jpg" class="card-img-top" alt="...">
+=======
+                <img src="{% static 'tienda/Imagenes/Productos/classic4.jpg'%}" class="card-img-top" alt="...">
+>>>>>>> Benjamin:tienda/templates/tienda/vclasica.html
+                <div class="card-body">
+                  <p class="card-title">Mozart, Orchestre De Chambre Ramat-Gan* Direction Eliahu Inbal - Trois Divertimenti Pour Orchestre A Cordes .</p>
+                  <p class="card-text">$30.000</p>
+                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Añadir Al Carro
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="button" class="BOTON-CARD">AÑADIR</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          <br>
+
+
+{%endblock%}
