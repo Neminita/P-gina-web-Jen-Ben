@@ -11,4 +11,5 @@ urlpatterns = [
     path('Nosotros/',views.nosotros, name='Nosotros' ),
     path('Registro/',views.registro, name='Registro' ),
     path('Rock/',views.rock, name='Rock' ),
+    path('agregar-producto', views.agregar_producto, name = 'agregar_producto'),
 ]

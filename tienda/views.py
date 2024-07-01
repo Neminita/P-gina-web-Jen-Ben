@@ -3,6 +3,7 @@ from .models import Vinilo
 from .models import Jazz
 from .models import Clasica
 from .models import Rock
+from .forms import ViniloForm
 
 
 # Create your views here.
@@ -40,4 +41,5 @@ def rock(request):
     return render(request, 'tienda/vrock.html')
 
 def agregar_producto(request):
-    return render(request, 'tienda/vinilo/agregar.html')
+    data = {'form' : ViniloForm()}
+    return render(request, 'tienda/vinilo/agregar.html', data)
