@@ -42,4 +42,11 @@ def rock(request):
 
 def agregar_producto(request):
     data = {'form' : ViniloForm()}
+    if request.method == 'POST':
+        formulario = ViniloForm(data=request.POST, files=request.FILES) 
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Guardado Correctamente"
+        else:
+            data["form"] = formulario
     return render(request, 'tienda/vinilo/agregar.html', data)
