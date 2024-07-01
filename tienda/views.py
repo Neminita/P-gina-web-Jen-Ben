@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Vinilo
 from .models import Jazz
 from .models import Clasica
@@ -15,8 +15,9 @@ def carrito(request):
     return render(request, 'tienda/vCarrito.html')
 
 def clasica(request):
-
-    return render(request, 'tienda/vclasica.html')
+    vinilos = Vinilo.objects.all()
+    data = {"vinilos" : vinilos}
+    return render(request, 'tienda/vclasica.html', data)
 
 def contacto(request):
     return render(request, 'tienda/vContacto.html')
@@ -26,8 +27,8 @@ def inisesion(request):
 
 def jazz(request):
 
-    jazzs = Jazz.objects.all()
-    data = {"jazzs" : jazzs}
+    vinilos = Vinilo.objects.all()
+    data = {"vinilos" : vinilos}
 
     return render(request, 'tienda/vjazz.html', data)
 
@@ -38,7 +39,9 @@ def registro(request):
     return render(request, 'tienda/vRegistro.html')
 
 def rock(request):
-    return render(request, 'tienda/vrock.html') 
+    vinilos = Vinilo.objects.all()
+    data = {"vinilos" : vinilos}
+    return render(request, 'tienda/vrock.html', data) 
 
 def agregar_producto(request):
     data = {'form' : ViniloForm()}
@@ -50,3 +53,25 @@ def agregar_producto(request):
         else:
             data["form"] = formulario
     return render(request, 'tienda/vinilo/agregar.html', data)
+
+def listar_producto(request):
+    vinilos = Vinilo.objects.all()
+    data = {"vinilos" : vinilos}
+    
+    return render(request, 'tienda/vinilo/listar.html', data)
+
+def modificar_producto(request, id):
+    vinilos = get_object_or_404(Vinilo, id=id)
+    data= {"form" : ViniloForm(instance=vinilos)}
+    if request.method == 'POST':
+        formulario = ViniloForm(data=request.POST, instance= vinilos, files=request.FILES) 
+        if formulario.is_valid():
+                formulario.save()
+                data["mensaje"] = "Modificado Correctamente"
+                return redirect(to="listar_producto")    
+    return render(request, 'tienda/vinilo/modificar.html', data)
+
+def eliminar_producto(request, id):
+    vinilos=get_object_or_404(Vinilo, id=id)
+    vinilos.delete()
+    return redirect(to="listar_producto")

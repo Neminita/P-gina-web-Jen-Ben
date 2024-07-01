@@ -2,132 +2,44 @@
 {% block contenido %}
 {%load static%}
 
-        
-        <br>
-        
-      <section id="cartas">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="{% static 'tienda/Imagenes/Productos/thefourthseasons.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Vivaldi - The Fourth Seasons</p>
-                  <p class="card-text">$40.000</p>
-                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir Al Carro
-                  </button>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                          <button type="button" class="BOTON-CARD">AÑADIR</button>
-                        </div>
+
+      <br>      
+      <br>
+
+    <section id="cartas">
+
+      <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+        {% for p in vinilos%}
+         {% if p.Categoria.id == 2 %}
+
+          <div class="col-sm-4 col-md-10 mt-5 text-center">
+
+            <div class="card mb-3 col-md-10">
+              {% if p.portada%}
+              <img src="{{p.portada.url}}" class="card-img-top" alt="...">
+              {% endif%}
+              <div class="card-body">
+                <h5 class="card-title fw-semibold ms-3 fs-5 text-black col-md-10">{{p.autor}}</h5>
+                <p class="card-text">{{p.nombre}}</p>
+                <p class="card-text">${{p.valor}}</p>
+                <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Añadir Al Carro
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="{% static 'tienda/Imagenes/Productos/classic2.png'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Tiana Lemnitz - The Art Of Tiana</p>
-                  <p class="card-text"> $14.000</p>
-                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir Al Carro
-                  </button>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                          <button type="button" class="BOTON-CARD">AÑADIR</button>
-                        </div>
+                      <div class="modal-body">
+                        Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
                       </div>
-                    </div>
-                  </div>
-                  <div class="container-modal">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="{% static 'tienda/Imagenes/Productos/classic3.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Vivaldi, Veracini, Haendel - La Flauta En El Barroco</p>
-                  <p class="card-text">$20.000</p>
-                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir Al Carro
-                  </button>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                          <button type="button" class="BOTON-CARD">AÑADIR</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="{% static 'tienda/Imagenes/Productos/classic4.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">Mozart, Orchestre De Chambre - Trois Divertimenti.</p>
-                  <p class="card-text">$30.000</p>
-                  <button type="button" class="BOTON-CARD" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir Al Carro
-                  </button>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea añadir al carro?</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Desea añadir el producto al carro de compras, podrá añadir o eliminar del carrito el producto cuando desee.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                          <button type="button" class="BOTON-CARD">AÑADIR</button>
-                        </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button class="BOTON-CARD">AÑADIR</button>
                       </div>
                     </div>
                   </div>
@@ -136,8 +48,11 @@
             </div>
           </div>
         </div>
-      </section>
-          <br>
-
-
-{%endblock%}
+        
+      </div>
+       {%endif%} 
+      {% endfor %} 
+      </div> 
+    </section>
+    <br>
+{%endblock%}  

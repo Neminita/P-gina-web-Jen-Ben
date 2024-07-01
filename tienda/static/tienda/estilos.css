@@ -254,7 +254,7 @@ form{
 #cartas .card-title{
     width: 50%;
     max-width: 600px;
-    text-align: initial;
+    text-align: center;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -270,7 +270,7 @@ form{
 }
 
 #cartas .card {
-    align-items: flex-start;
+    align-items: center;
     margin: 20px;
 }
 
