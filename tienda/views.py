@@ -38,7 +38,7 @@ def registro(request):
     return render(request, 'tienda/vRegistro.html')
 
 def rock(request):
-    return render(request, 'tienda/vrock.html')
+    return render(request, 'tienda/vrock.html') 
 
 def agregar_producto(request):
     data = {'form' : ViniloForm()}
